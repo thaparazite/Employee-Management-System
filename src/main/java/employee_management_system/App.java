@@ -71,7 +71,7 @@ public class App {
                     int searchID = scanner.nextInt();
                     Employee searchEmployee = employee.search(searchID);
                     if (searchEmployee != null) {
-                        App.printUnderline(text);
+                        App.divider();
                         System.out.println(" Employee with ID: " + searchEmployee.getEmployeeID()
                                 + " was found in the "
                                 + searchEmployee.getDepartment() + " department"
