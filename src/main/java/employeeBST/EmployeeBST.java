@@ -19,11 +19,11 @@ public class EmployeeBST implements EmployeeBSTInterface {
     private Node root;
 
     public void insert(Employee data) {
-        root = insertRec(root, data);
+        root = insertRecord(root, data);
     }// end of insert method
 
     // recursive method to insert a new employee record
-    private Node insertRec(Node root, Employee data) {
+    private Node insertRecord(Node root, Employee data) {
         // if the tree is empty, return a new node
         if (root == null) {
             root = new Node(data);// create a new node and pass the data to it
@@ -36,9 +36,9 @@ public class EmployeeBST implements EmployeeBSTInterface {
          * in the right subtree of the root node
          */
         if (data.compareTo(root.data) < 0)
-            root.left = insertRec(root.left, data);
+            root.left = insertRecord(root.left, data);
         else if (data.compareTo(root.data) > 0)
-            root.right = insertRec(root.right, data);
+            root.right = insertRecord(root.right, data);
         return root;// return the root node
     }// end of insertRec method
 
