@@ -43,13 +43,13 @@ public class EmployeeBST implements EmployeeBSTInterface {
     }// end of insertRec method
 
     public Employee search(int employeeId) {
-        return searchRec(root, employeeId);
+        return searchRecord(root, employeeId);
     }// end of search method
 
     /*
      * recursive method to search for a node in the tree with the given employee ID
      */
-    private Employee searchRec(Node root, int employeeId) {
+    private Employee searchRecord(Node root, int employeeId) {
         // if the tree is empty or the root node is the node to be searched, return the
         if (root == null || root.data.getEmployeeID() == employeeId)
             return (root != null) ? root.data : null;// return the root node if it is not null
@@ -59,11 +59,11 @@ public class EmployeeBST implements EmployeeBSTInterface {
          * recursively search in the left subtree of the root node
          */
         if (employeeId < root.data.getEmployeeID())
-            return searchRec(root.left, employeeId);
+            return searchRecord(root.left, employeeId);
         /*
          * recursively search in the right subtree of the root node if the employee ID
          */
-        return searchRec(root.right, employeeId);
+        return searchRecord(root.right, employeeId);
     }// end of searchRec method
 
     public void delete(int employeeId) {
