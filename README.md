@@ -50,11 +50,6 @@ Ensure that Java Development Kit (JDK) is installed on your system.
 | 3  | Execute the `App` class to run the Employee Management System.|
 | 4  | Follow the on-screen prompts to insert, search, delete, or print employee records.|
 
-### Note:
-Ensure you have the Java Development Kit (JDK) installed on your system.
-
-
-
 ## Support and Assistance:
 If you encounter any issues or have questions about the project, feel free to open an issue on GitHub or reach out to the project maintainer via email x22195092@student.ncirl.ie.
 
